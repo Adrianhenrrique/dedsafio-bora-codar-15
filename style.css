@@ -10,15 +10,20 @@
   font-weight: 600;
 }
 
+html {
+  width: 100vw;
+}
+
 body {
   background: #F8FAFC;
-  width: 100vw;
-  height: 100vh;
   display: flex;
+  width: 100%;
+  height: 100%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 
 .card-content {
@@ -26,6 +31,7 @@ body {
   display: flex;
   gap: 32px;
   position: relative;
+  margin-top: 6%;
 }
 
 .card-content .card:nth-child(2)::before {
@@ -50,7 +56,6 @@ body {
 }
 
 .card-content .card {
-  width: 384px;
   box-sizing: border-box;
   background: #FFFFFF;
   border: 1px solid #c4cad2;
@@ -181,5 +186,10 @@ body {
   .card-content{
     display: flex;
     flex-direction: column;
+  }
+
+  .card-content .card:nth-child(2)::before {
+    top: 31%;
+    bottom: 66%;
   }
 }
