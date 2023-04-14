@@ -31,7 +31,7 @@ body {
   display: flex;
   gap: 32px;
   position: relative;
-  margin-top: 6%;
+  margin-top: 8%;
 }
 
 .card-content .card:nth-child(2)::before {
